@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: #1a1208;
+  color: #f0e8d0;
+  font-family: 'Merriweather', Georgia, serif;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* The colony is the interface — no scrollbars on the page. The side panel
+   science copy gets its own thin, almost-invisible scrollbar. */
+.panel-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #3d2912 transparent;
+}
+.panel-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.panel-scroll::-webkit-scrollbar-thumb {
+  background: #3d2912;
+  border-radius: 0;
+}
+.panel-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* The whole colony SVG should never show selection highlights. */
+svg text {
+  user-select: none;
+}
