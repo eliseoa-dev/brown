@@ -11,3 +11,4 @@ dist-ssr
 
 # Generated single-file build (inlined dist) — produced on demand, not source
 FORMICARIUM.html
+dist-single
